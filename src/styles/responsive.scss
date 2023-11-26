@@ -1,0 +1,441 @@
+
+/* Responsive */
+
+
+/* Table size */
+
+@media screen and (max-width: 1024px) {
+
+  /* Homepage */
+  .homepage {
+    text-align: center;
+    .greeting {
+      p {
+        font-size: 24px;
+        width: 65%;
+      }
+    }
+    .list {
+      display: inline-block;
+      text-align: center;
+      a {
+        h3 {
+          font-size: 40px;
+          &:first-child {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+  /* About */
+  .about-me {
+    .photos {
+      top: 30%;
+      left: -50px;
+      .polaroid {
+        width: 190px;
+        height: 220px;
+        img {
+          width: 170px;
+          height: 150px;
+        }
+      }
+    }
+  }
+  img.doodle {
+    margin-top: 30px;
+  }
+
+  .project-list {
+    position: unset;
+    margin: 20px 15px;
+    width: auto;
+    transform: unset;
+    overflow: auto;
+    margin-top: 50px;
+  }
+
+  .project-detail {
+    .col-lg-8 {
+      max-width: 55%;
+    }
+    .col-lg-4 {
+      max-width: 50%;
+      flex: 0 0 45%;
+    }
+    .content {
+      width: 95%;
+    }
+    .carousel.slide  {
+      margin: 0;
+      .carousel-item img {
+        height: 420px;
+      }
+    }
+    .project-list {
+      position: unset;
+      margin: 20px 15px;
+      width: auto;
+      transition-duration: unset;
+      transform: unset;
+      overflow: auto;
+      margin-top: 50px;
+      &:hover {
+        bottom: 0;
+        .project {
+          div {
+            transform: unset;
+            top: 50px;
+          }
+        }
+      }
+      .project {
+        div {
+          transform: unset;
+          left: 20px;
+          top: 55px;
+        }
+        p.title {
+          transform: unset;
+        }
+        p:last-child {
+          opacity: 1;
+        }
+      }
+    }
+    .img-pencil {
+      display: none;
+    }
+  }
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+  /* About */
+  .about-me {
+    .photos {
+      bottom: 0px;
+      left: 50%;
+      transform: translate(-60%, 120px);
+    }
+  }
+
+
+
+
+  .container {
+    max-width: 800px;
+  }
+
+  .homepage {
+    .greeting {
+      p {
+        font-size: 18px;
+        width: 65%;
+      }
+    }
+    .list {
+      display: inline-block;
+      text-align: center;
+      a {
+        h3 {
+          font-size: 30px;
+          &:first-child {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* animation */
+  .animation {
+    justify-content: center;
+    .video {
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+    .video-list {
+      margin: 30px 0;
+      iframe {
+        height: 420px;
+      }
+    }
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  /* Homepage */
+
+
+  /* About */
+  .about-me {
+    .photos {
+      .polaroid {
+        width: 250px;
+        height: 270px;
+        img {
+          width: 230px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  /* contact */
+  .contact {
+    top: 150px;
+    .drawing {
+      display: none;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    .social {
+      margin-bottom: 40px;
+      a {
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .design-projects {
+    position: unset;
+    .intro {
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+  .project-detail {
+    .carousel.slide {
+      .carousel-item img {
+        height: 430px;
+      }
+    }
+  }
+  .animation {
+    .video-list {
+      iframe {
+        height: 350px;
+        margin: 10px auto;
+      }
+    }
+  }
+
+}
+
+/* mobile size */
+
+@media screen and (max-width: 540px) {
+
+
+  /* Homepage */
+  .homepage {
+    .greeting {
+      margin-top: 20px;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+        width: 90%;
+      }
+    }
+    .list {
+      margin-top: 30px;
+      a h3 {
+        font-size: 24px;
+        &:first-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    img.welcome {
+      height: 35%;
+    }
+  }
+
+  /* About */
+  .about-me {
+    top: 20px;
+    .text {
+      p {
+        font-size: 13px;
+      }
+    }
+    .photos {
+      position: unset;
+      transform: unset;
+      left: 0;
+      top: 0;
+      margin: 10% 0;
+      .polaroid:nth-child(3) {
+        position: unset;
+        left: 0;
+        margin: 0 auto
+      }
+      .polaroid:nth-child(2),
+      .polaroid:nth-child(1) {
+        display: none;
+      }
+    }
+  }
+
+  /* contact */
+  .contact {
+    top: 80px;
+    h1 {
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .design-projects {
+    position: unset;
+    margin-top: 20px;
+    .intro {
+      h1 {
+        font-size: 40px;
+      }
+    }
+    .download {
+      margin-bottom: 20px;
+    }
+  }
+  .project-list {
+    margin-top: 30px;
+  }
+
+  .project-detail {
+    .content {
+      width: 100%;
+    }
+    .detail {
+      margin: 0 15px;
+      margin-top: 70px;
+    }
+    .carousel.slide .carousel-item img {
+      height: 240px;
+    }
+  }
+
+  /* animation */
+  .animation {
+    .col-lg-6, .col-md-12 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .video-list {
+      iframe {
+        height: 250px;
+        margin: 10px auto;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 320px) {
+
+  /* Homepage */
+  .homepage {
+    .greeting {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+    .list {
+      margin-top: 20px;
+      a h3 {
+        font-size: 18px;
+        &:first-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    img.welcome {
+      height: 40%;
+    }
+  }
+}
+
+
+.thumbnail img {
+  border-radius: 15px;
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects folder shake animation
+  @keyframes shake {
+    0% {
+      transform: translate(3px, 0px)  rotate(5deg);
+    }
+    50% {
+      transform: translate(-3px, -0px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  @-moz-keyframes shake {
+    0% {
+      -moz-transform: translate(3px, 0px)  rotate(5deg);
+    }
+    50% {
+      -moz-transform: translate(-3px, -0px) rotate(-5deg);
+    }
+    100% {
+      -moz-transform: translate(0, 0);
+    }
+  }
+  @-webkit-keyframes shake {
+    0% {
+      -webkit-transform: translate(3px, 0px)  rotate(5deg);
+    }
+    50% {
+      -webkit-transform: translate(-3px, -0px) rotate(-5deg);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+    }
+  }
+  @-ms-keyframes shake {
+    0% {
+      -ms-transform: translate(3px, 0px)  rotate(5deg);
+    }
+    50% {
+      -ms-transform: translate(-3px, -0px) rotate(-5deg);
+    }
+    100% {
+      -ms-transform: translate(0, 0);
+    }
+  }
+
+/*  ====================================  */
