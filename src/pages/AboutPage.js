@@ -17,9 +17,9 @@ const About = () => {
           <Row>
               <Col md={6}>
               <div className='about'>
-                <p>Hey, I'm Nune. My legal name is Patthamawan Iteeyaporn. I've been in the creative game for almost 10 years, starting at Staffordshire University, where I learned the ins and outs of various animations.</p>
+                <p>Hey, I'm Nune. I've been in the creative game for almost 10 years, starting at Staffordshire University, where I learned the ins and outs of various animations.</p>
                 <p>
-                I spent nearly 4 years animating for Kid TV shows before venturing into the unknown world of UX/UI design and web design. 
+                I spent nearly 4 years animating for children's TV shows before venturing into the world of UX/UI design and web design. 
                 I navigated that creative universe for a solid 5 and a half years, working with various fast-paced startups that boosted my confidence in strong teamwork, communication, and organizational skills.
                 </p>
                 <p>
