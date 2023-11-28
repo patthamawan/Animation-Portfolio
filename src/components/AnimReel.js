@@ -39,7 +39,7 @@ const VideoFile = () => {
   return (
     <div>
       <VideoPlayer videoUrl={videoUrl} />
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div className="password-box">
           <div className="modal-content">
             <p>Enter Password to View</p>
@@ -55,7 +55,7 @@ const VideoFile = () => {
             <button onClick={handlePlayButtonClick}>ENTER</button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
