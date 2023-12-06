@@ -15,7 +15,7 @@ const About = () => {
           </div>
           <div className='my-info'>
           <Row>
-              <Col md={6}>
+              <Col md={6} sm={12}>
               <div className='about'>
                 <p>Hey, I'm Nune. I've been in the creative game for almost 10 years, starting at Staffordshire University, where I learned the ins and outs of various animations.</p>
                 <p>
@@ -44,7 +44,7 @@ const About = () => {
                 <a href="https://www.instagram.com/nunny_art/" target="_blank"><img src={Instagram}/></a>
               </div>
               </Col>
-              <Col md={6}>
+              <Col md={6} sm={12}>
                 <div className='profilePic'>
                   <img src={MyPhoto}/>
                 </div>

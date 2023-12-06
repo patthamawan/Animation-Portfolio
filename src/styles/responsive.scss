@@ -114,14 +114,27 @@
 
 
 @media screen and (max-width: 992px) {
+
+
   /* About */
-  .about-me {
-    .photos {
-      bottom: 0px;
-      left: 50%;
-      transform: translate(-60%, 120px);
+  .container {
+    max-width: 850px !important;
+}
+.my-info {
+  .about {
+    margin-top: 30px;
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
     }
   }
+  .profilePic{
+    img {
+      left: 0;
+    }
+  }
+}
+
 
 
 
@@ -152,7 +165,13 @@
 
   }
 
+  .bg-img {
+    display: none;
+  }
+
   /* animation */
+
+  
   .animation {
     justify-content: center;
     .video {
@@ -175,21 +194,34 @@
 @media screen and (max-width: 768px) {
 
   /* Homepage */
+  .title h1 {
+    font-size: 40px;
+  }
 
-
-  /* About */
-  .about-me {
-    .photos {
-      .polaroid {
-        width: 250px;
-        height: 270px;
-        img {
-          width: 230px;
-          height: 200px;
+  .demo-reel {
+    margin: 30px;
+    padding: 10px 20px;
+    
+  }
+  .password-box {
+    .modal-content {
+      width: 60%;
+    }
+  }
+  
+    /* About */
+    .my-info {
+      .about {
+        margin-top: 10px;
+        p {
+          font-size: 15px;
+          margin-bottom: 15px;
         }
       }
     }
-  }
+    .profilePic {
+      display: none;
+    }
 
   /* contact */
   .contact {
@@ -242,53 +274,52 @@
 
 
   /* Homepage */
-  .homepage {
-    .greeting {
-      margin-top: 20px;
-      h1 {
-        font-size: 30px;
-      }
-      p {
-        font-size: 14px;
-        width: 90%;
-      }
+  .navbar {
+    margin-bottom: 10px;
+  }
+  .navbar ul li {
+    font-size: 16px;
+  }
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+  .navbar ul {
+    padding-left: 0;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .demo-reel {
+    margin: 10px;
+    padding: 5px 10px;
+  }
+  .password-box { 
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
     }
-    .list {
-      margin-top: 30px;
-      a h3 {
-        font-size: 24px;
-        &:first-child {
-          margin-bottom: 30px;
-        }
+    .modal-content {
+      width: 80%;
+      input {
+        margin-bottom: 10px;
+        height: 30px;
       }
-    }
-    img.welcome {
-      height: 35%;
+      button {
+        height: 30px;
+        line-height: 1.9;
+        font-weight: normal;
+      }
     }
   }
+  
 
   /* About */
-  .about-me {
-    top: 20px;
-    .text {
+  .my-info {
+    .about {
+      margin-top: 10px;
       p {
-        font-size: 13px;
-      }
-    }
-    .photos {
-      position: unset;
-      transform: unset;
-      left: 0;
-      top: 0;
-      margin: 10% 0;
-      .polaroid:nth-child(3) {
-        position: unset;
-        left: 0;
-        margin: 0 auto
-      }
-      .polaroid:nth-child(2),
-      .polaroid:nth-child(1) {
-        display: none;
+        font-size: 14px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -352,6 +383,19 @@
 @media screen and (max-width: 320px) {
 
   /* Homepage */
+
+  .navbar ul li {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .navbar ul {
+    padding-left: 0;
+  }
+
+  .title h1 {
+    font-size: 26px;
+  }
+
   .homepage {
     .greeting {
       width: 95%;
