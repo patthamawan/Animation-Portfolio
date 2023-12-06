@@ -9,7 +9,7 @@ const HomePage = () => {
       <Container>
         <div className="homepage">
             <div className='title'>
-              <h1>Animation Reel</h1>
+              <h1>Animation Demo Reel</h1>
             </div>
             <div className='video'>
               <div className='demo-reel'>

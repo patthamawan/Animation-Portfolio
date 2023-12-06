@@ -7,7 +7,7 @@ const VideoFile = () => {
   const [password, setPassword] = useState('');
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
   const [isShaking, setIsShaking] = useState(false);
-  const videoUrl = '/Portfolio.mp4';
+  const videoUrl = '/DemoReelDec2023.mp4';
   
 
   const handlePasswordChange = (e) => {
@@ -39,7 +39,7 @@ const VideoFile = () => {
   return (
     <div>
       <VideoPlayer videoUrl={videoUrl} />
-      {/* {isModalOpen && (
+      {isModalOpen && (
         <div className="password-box">
           <div className="modal-content">
             <p>Enter Password to View</p>
@@ -55,7 +55,7 @@ const VideoFile = () => {
             <button onClick={handlePlayButtonClick}>ENTER</button>
           </div>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
