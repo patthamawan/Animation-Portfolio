@@ -29,20 +29,7 @@
     }
   }
   /* About */
-  .about-me {
-    .photos {
-      top: 30%;
-      left: -50px;
-      .polaroid {
-        width: 190px;
-        height: 220px;
-        img {
-          width: 170px;
-          height: 150px;
-        }
-      }
-    }
-  }
+
   img.doodle {
     margin-top: 30px;
   }
@@ -119,21 +106,22 @@
   /* About */
   .container {
     max-width: 850px !important;
-}
-.my-info {
-  .about {
-    margin-top: 30px;
-    p {
-      font-size: 14px;
-      margin-bottom: 5px;
+  }
+
+  .about-me {
+    .my-info {
+      img {
+       height: 300px;
+
+      }
+      .about {
+        margin-left: 20px;
+        p {
+          font-size: 12px;
+        }
+      }
     }
   }
-  .profilePic{
-    img {
-      left: 0;
-    }
-  }
-}
 
 
 
@@ -210,18 +198,24 @@
   }
   
     /* About */
-    .my-info {
-      .about {
-        margin-top: 10px;
-        p {
-          font-size: 15px;
-          margin-bottom: 15px;
+ 
+    .about-me {
+      .my-info {
+        display: block;
+        img {
+         height: 250px;
+  
+        }
+        .about {
+          margin: 30px 0;
+          padding: 0 30px;
+          p {
+            font-size: 12px;
+          }
         }
       }
     }
-    .profilePic {
-      display: none;
-    }
+
 
   /* contact */
   .contact {
@@ -314,12 +308,18 @@
   
 
   /* About */
-  .my-info {
-    .about {
-      margin-top: 10px;
-      p {
-        font-size: 14px;
-        margin-bottom: 10px;
+  .about-me {
+    .my-info {
+      img {
+       height: 200px;
+
+      }
+      .about {
+        margin: 30px 0;
+        padding: 0 20px;
+        p {
+          font-size: 1px;
+        }
       }
     }
   }

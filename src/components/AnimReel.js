@@ -52,7 +52,7 @@ const VideoFile = () => {
                 !isPasswordCorrect && isShaking ? 'incorrect' : ''
               }`}
             />
-            <button onClick={handlePlayButtonClick}>ENTER</button>
+            <button onClick={handlePlayButtonClick}>Enter</button>
           </div>
         </div>
       )}

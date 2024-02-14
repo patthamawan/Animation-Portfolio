@@ -8,17 +8,9 @@ const HomePage = () => {
     <div>
       <Container>
         <div className="homepage">
-            <div className='title'>
-              <h1>Animation Demo Reel</h1>
-            </div>
             <div className='video'>
               <div className='demo-reel'>
                 <AnimReel />
-              </div>
-              <div className='email'>
-                <a href="mailto:p.iteeyaporn@gmail.com">
-                  <p>p.iteeyaporn@gmail.com</p>
-                </a>
               </div>
             </div>
         </div>
@@ -28,4 +20,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-

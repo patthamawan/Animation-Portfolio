@@ -9,24 +9,24 @@ const Menu = () =>{
     console.log('Current Path:', pathname);
     return(
       <nav className='navbar'>
-      <ul>
-        <li>
-          <NavLink to="/" className={pathname === '/home' ? 'active' : ''}>
-            Demo Reel
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/personal-work" className={pathname === '/personal-work' ? 'active' : ''}>
-            Personal Work
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" className={pathname === '/about-me' ? 'active' : ''}>
-            About
-          </NavLink>
-        </li>
-      </ul>
-    </nav>
+        <ul>
+          <li>
+            <NavLink to="/" className={pathname === '/home' ? 'active' : ''}>
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/personal-work" className={pathname === '/personal-work' ? 'active' : ''}>
+              Works
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className={pathname === '/about-me' ? 'active' : ''}>
+              About
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
     )
 }
 
