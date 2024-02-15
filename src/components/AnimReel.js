@@ -7,7 +7,7 @@ const VideoFile = () => {
   const [password, setPassword] = useState('');
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
   const [isShaking, setIsShaking] = useState(false);
-  const videoUrl = '/DemoReelDec2023_v2.mov';
+  const videoUrl = '/DemoReel_v3.mov';
   
 
   const handlePasswordChange = (e) => {
