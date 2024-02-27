@@ -42,7 +42,7 @@ const VideoFile = () => {
       {isModalOpen && (
         <div className="password-box">
           <div className="modal-content">
-            <p>Enter Password to View</p>
+            <p>Enter Password to View Animation Reel</p>
             <input
               type = "password"
               value = {password}
