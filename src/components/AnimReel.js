@@ -10,36 +10,36 @@ const VideoFile = () => {
   const videoUrl = '/DemoReel_v4.mov';
   
 
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-    setIsShaking(false); // Reset shaking when typing a new passwor
-  };
+  // const handlePasswordChange = (e) => {
+  //   setPassword(e.target.value);
+  //   setIsShaking(false); // Reset shaking when typing a new passwor
+  // };
 
-  const handleModalClose = () => {
-    setIsModalOpen(false);
-    // You can add additional logic here if needed
-  };
+  // const handleModalClose = () => {
+  //   setIsModalOpen(false);
+  //   // You can add additional logic here if needed
+  // };
 
-  const handlePlayButtonClick = () => {
-    // Check if the entered password is correct
-    if (password === '551462') {
-      setIsPasswordCorrect(true);
-      setIsModalOpen(false); // Close the modal after entering the correct password
-    } else {
-      setIsShaking(true); // Trigger shaking animation on incorrect password
-    }
-  };
-
-  // const handleKeyPress = (e) => {
-  //   if (e.key === 'Enter') {
-  //     handlePlayButtonClick(); // Trigger play button click on Enter key press
+  // const handlePlayButtonClick = () => {
+  //   // Check if the entered password is correct
+  //   if (password === '551462') {
+  //     setIsPasswordCorrect(true);
+  //     setIsModalOpen(false); // Close the modal after entering the correct password
+  //   } else {
+  //     setIsShaking(true); // Trigger shaking animation on incorrect password
   //   }
   // };
+
+  // // const handleKeyPress = (e) => {
+  // //   if (e.key === 'Enter') {
+  // //     handlePlayButtonClick(); // Trigger play button click on Enter key press
+  // //   }
+  // // };
 
   return (
     <div>
       <VideoPlayer videoUrl={videoUrl} />
-      {isModalOpen && (
+      {/* {isModalOpen && (
         <div className="password-box">
           <div className="modal-content">
             <p>Enter Password to View Animation Reel</p>
@@ -55,7 +55,7 @@ const VideoFile = () => {
             <button onClick={handlePlayButtonClick}>Enter</button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

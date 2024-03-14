@@ -10,12 +10,12 @@ export const videos = [
     },
     { 
         id: 3,
-        videoUrl: '/dynamic_walk.mov', 
+        videoUrl: '/Troll_mime.mov', 
     },
 
     { 
         id: 4,
-        videoUrl: '/ObstaclesRun.mov',
+        videoUrl: '/dynamic_walk.mov ',
     },
     { 
         id: 5,
@@ -24,7 +24,7 @@ export const videos = [
 
     { 
         id: 6,
-        videoUrl: '/Troll_mime.mov',
+        videoUrl: '/ObstaclesRun.mov',
     },
 
     { 

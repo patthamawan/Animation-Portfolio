@@ -12,7 +12,7 @@ const Menu = () =>{
         <ul>
           <li>
             <NavLink to="/" className={pathname === '/home' ? 'active' : ''}>
-              Home
+              Demo Reel
             </NavLink>
           </li>
           <li>
