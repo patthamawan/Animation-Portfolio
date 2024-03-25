@@ -120,6 +120,40 @@
 
 /* ======================= */
 
+
+/* Tabs */
+
+.nav-tabs {
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
+  border: none;
+  font-size: 16px;
+
+  .nav-link.active {
+    background: linear-gradient(176deg, rgba(2,181,255,1) 35%, rgba(16,125,224,1) 100%);
+    color: #fff;
+    font-weight: 600;
+  }
+  .nav-link {
+    background-color: #fff;
+    border-radius: 100px;
+    color: $textColor;
+    margin-right: 5px;
+  }
+  .nav-item:last-child .nav-link {
+    margin-right: 0;
+  }
+
+  .nav-link:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button:focus {
+    outline: unset;
+  }
+}
+
 /* Styling for the video player */
 
 .demo-reel {

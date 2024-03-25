@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { Tabs, Tab } from 'react-bootstrap';
 import VideoPlayer from './VideoPlayer';
-import { Container } from 'react-bootstrap';
+
 
 const VideoFile = () => {
-  const [isModalOpen, setIsModalOpen] = useState(true);
-  const [password, setPassword] = useState('');
-  const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
-  const [isShaking, setIsShaking] = useState(false);
-  const videoUrl = '/DemoReel_v4.mov';
-  
+  // Modal with passowrd
+  // const [isModalOpen, setIsModalOpen] = useState(true);
+  // const [password, setPassword] = useState('');
+  // const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
+  // const [isShaking, setIsShaking] = useState(false);
 
   // const handlePasswordChange = (e) => {
   //   setPassword(e.target.value);
@@ -36,10 +37,41 @@ const VideoFile = () => {
   // //   }
   // // };
 
+  const videoVFX = '/DemoReel_v4.mov';
+  const videoCartoon = '/CartoonReel.mov';
+
+  // Tabs
+
+  const [activeTab, setActiveTab] = useState('home');
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const tab = params.get('tab');
+    if (tab) setActiveTab(tab);
+  }, [location]);
+
+  const handleSelect = (key) => {
+    setActiveTab(key);
+  };
+
   return (
     <div>
-      <VideoPlayer videoUrl={videoUrl} />
+      <Tabs
+      id="controlled-tab-example"
+      activeKey={activeTab}
+      onSelect={handleSelect}
+    >
+      <Tab eventKey="home" title="Showreel">
+        <VideoPlayer videoUrl={videoVFX} />
+      </Tab>
+      <Tab eventKey="cartoon" title="Cartoon Reel">
+        <VideoPlayer videoUrl={videoCartoon} />
+      </Tab>
+    </Tabs>
+      
       {/* {isModalOpen && (
+        <VideoPlayer videoUrl={videoUrl} />
         <div className="password-box">
           <div className="modal-content">
             <p>Enter Password to View Animation Reel</p>
