@@ -37,7 +37,7 @@ const VideoFile = () => {
   // //   }
   // // };
 
-  const videoVFX = '/DemoReel_v4.mov';
+  const videoVFX = '/DemoReel_v5.mov';
   const videoCartoon = '/CartoonReel.mov';
 
   // Tabs
@@ -95,3 +95,4 @@ const VideoFile = () => {
 export default VideoFile;
 
 
+// https://nunefolio.co.uk/?tab=cartoon to open website with cartoon tab
