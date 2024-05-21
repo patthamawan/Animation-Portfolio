@@ -38,7 +38,7 @@ const VideoFile = () => {
   // // };
 
   const videoVFX = '/DemoReel_v5.mov';
-  const videoCartoon = '/CartoonReel.mov';
+  const videoCartoon = '/CartoonReel_2.mov';
 
   // Tabs
 
