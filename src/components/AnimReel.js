@@ -68,7 +68,7 @@ const VideoFile = () => {
       </Tab>
       <Tab eventKey="cartoon" title="Cartoon Reel">
         <VideoPlayer videoUrl={videoCartoon} />
-        <p>If the video player doesn't work, please click this <a href="https://vimeo.com/920008782" target="_blank"><b style={{ color: 'blue' }} >link</b></a> to watch it on Vimeo </p>
+        <p>If the video player doesn't work, please click this <a href="https://vimeo.com/920008782" target="_blank"><b style={{ color: 'blue' }} >link</b></a> to watch it on Vimeo</p>
       </Tab>
     </Tabs>
       
