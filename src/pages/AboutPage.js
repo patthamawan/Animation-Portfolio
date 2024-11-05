@@ -20,7 +20,7 @@ const About = () => {
               </p>
               <p>
               I'm a self-motivated individual, always looking for opportunities to improve myself in any way I can. My ultimate goal is to someday work on a major feature film project or an AAA game.
-              I aspire to be the kind of animator who is very flexible in style. Crafting stories that resonate with people holds a special kind of magic for me, and I'm excited about the prospect of being part of that enchanting process.
+             I aspire to be the kind of animator who is very flexible in style. Crafting stories that resonate with people holds a special kind of magic for me, and I'm excited about the prospect of being part of that enchanting process.
               </p>
             </div>
           </div>
